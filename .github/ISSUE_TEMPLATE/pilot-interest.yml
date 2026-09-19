@@ -1,0 +1,27 @@
+name: Pilot interest
+description: Non-binding interest in a personalized cleaning-business follow-up pack.
+title: "Pilot interest: "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Share public business information only. This is not an accepted order. Checkout is not enabled; do not send payment or customer information."
+  - type: input
+    id: business
+    attributes:
+      label: Public business name or website
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like help writing?
+      description: "For example, a reply to a quote inquiry. Do not include real customer details."
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Pilot scope
+      options:
+        - label: "I understand the proposed price is $49, this is template-based writing rather than guaranteed bookings, and an inquiry does not place an order."
+          required: true
